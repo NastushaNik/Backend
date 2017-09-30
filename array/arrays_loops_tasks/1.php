@@ -7,5 +7,5 @@
  */
 $arr1 = array('html','css','php','js','jq');
 foreach ($arr1 as $value){
-print_r($value.'<br>');
 }
+print_r($value.'<br>');
