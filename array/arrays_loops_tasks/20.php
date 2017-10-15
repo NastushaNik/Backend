@@ -20,11 +20,11 @@ for ($i=1; $i<21; $i++){
     echo '<br>';
 }
 
-for ($i=1; $i<=20; $i++){
+for ($i=1; $i<21; $i++){
+    for ($j=1; $j<21-$i; $j++){
+        echo '&nbsp;';
+    }
     for ($k=1; $k<=$i; $k++){
-        for ($j=20; $j>=$i; $j--){
-            echo '&nbsp;';
-        }
         echo 'x';
     }
     echo '<br>';
