@@ -18,7 +18,7 @@ $colors = array('red','yellow','blue','gray','maroon','brown','green');
 for ($i=1; $i<=$row; $i++){
     echo '<tr>';
     for ($j=1; $j<=$cols; $j++){
-        $number = rand(1, 100);
+        $number = rand(1, 1000);
         $randColors = $colors[array_rand($colors)];
         echo '<td style="background-color:'.$randColors.'">'.$number.'</td>';
     }
