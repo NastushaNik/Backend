@@ -14,3 +14,4 @@ if ($a == $b){
 }else{
     var_dump ("Не равны");
 }
+var_dump ($a == $b);
