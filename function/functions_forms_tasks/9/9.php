@@ -7,13 +7,14 @@
  */
 //Написать функцию, которая переворачивает строку. Было "abcde", должна выдать "edcba". Ввод текста реализовать с помощью формы.
 
-$a = "abcde";
-
-function inverts($str){
-    $result = "";
-    for ($i = strlen($str) -1; $i >= 0; $i--){
-        $result.=$str[$i];
+if (filter_has_var(INPUT_POST, 'inverts')){
+    $a = $_POST['inverts'];
+    function inverts($str){
+        $result = "";
+        for ($i = strlen($str)-1; $i >= 0; $i--){
+            $result.=$str[$i];
+        }
+        return $result;
     }
-    return $result;
+    echo inverts($a);
 }
-echo inverts($a);

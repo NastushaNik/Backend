@@ -7,7 +7,5 @@
  */
 
 $array = array('test1', 'test64', 'test17', 'test33', 'test5', 'test15');
-//natsort($array);
-//print_r($array);
-sort($array);
-print_r($array);
+natsort($array);
+print_r($array);;
