@@ -6,8 +6,6 @@
  * Time: 7:28
  */
 
-phpinfo();
-
 $controller = $_GET['controller'];
 
 require '{$controller}.php';
